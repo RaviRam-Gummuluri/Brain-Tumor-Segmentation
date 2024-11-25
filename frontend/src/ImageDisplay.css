@@ -1,0 +1,372 @@
+/* Overlay container for centering the image and canvas */
+.overlay-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin: 10px auto;
+  }
+  
+  /* Brain Image */
+  .main-brain-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Annotation Canvas */
+  .main-annotation-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.6;
+    border-radius: 8px;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  .load-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .load-button:hover {
+    background-color: #45a049;
+  }
+  
+  .load-button:active {
+    transform: scale(0.98);
+  }
+
+  
+  .project-view {
+    text-align: center;
+  }
+  
+  .load-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .overlay-container {
+    position: relative;
+    display: inline-block; /* Ensures images stack correctly */
+  }
+  
+  .base-image {
+    display: block;
+    width: 100%;
+    max-width: 600px; /* Set a max width for images */
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 600px; /* Same as base image */
+    opacity: 0.6; /* Adjust opacity to make the overlay semi-transparent */
+  }
+
+  .project-view {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .overlay-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .base-image {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .load-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .load-button:hover {
+    background-color: green;
+  }
+  
+  .edit-button,
+  .save-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: red;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: darkred;
+  }
+  
+  .save-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .project-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .file-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #fff;
+  }
+  
+  .load-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .load-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .overlay-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .base-image {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .edit-button,
+  .save-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button:hover,
+  .save-button:hover {
+    background-color: #218838;
+  }
+  
+  .save-button {
+    background-color: green;
+  }
+  
+  .save-button:hover {
+    background-color: #115a0d;
+  }
+  
+  .edit-button {
+    background-color: red;
+  }
+  
+  .edit-button:hover {
+    background-color: #450d0d;
+  }
+  
+  .load-button:disabled,
+  .edit-button:disabled,
+  .save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* Centered Container */
+.file-upload-page {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 400px;
+  height: 100px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.file-upload-page:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Page Heading */
+.file-upload-page h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* File Input Styling */
+.file-input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+
+/* .file-input:hover {
+  border-color: #0056b3;
+} */
+
+.file-input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 4px #0056b3;
+}
+
+/* Upload Button Styling */
+.upload-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.upload-button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.upload-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Success Message */
+.success-message {
+  font-size: 1rem;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+/* Error Message */
+.error-message {
+  font-size: 1rem;
+  color: #dc3545;
+  margin-top: 20px;
+}
+
+/* Hover Effect for File Upload Area */
+.file-upload-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  text-align: center; /* Ensure text is centered */
+}
+
+
+  
+  

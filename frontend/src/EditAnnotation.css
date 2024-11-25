@@ -1,0 +1,177 @@
+/* Container styling */
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+/* Overlay container for centered image and canvas */
+.overlay-container {
+    position: relative;
+    width: 500px; /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Center it horizontally */
+}
+
+/* Brain image styling */
+.brain-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain; /* Scale the image proportionally */
+    z-index: 1;
+}
+
+/* Annotation canvas styling */
+.annotation-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 500px;
+    cursor: crosshair;
+    opacity: 0.4; /* Increase transparency for better overlay */
+    z-index: 2;
+}
+
+
+/* Toolbox styling */
+.toolbox {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Toolbox button styling */
+.toolbox button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolbox button:hover {
+    background-color: #ddd;
+}
+
+/* Toolbox styling */
+.toolbox {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Toolbox button styling */
+.toolbox button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolbox button:hover {
+    background-color: #ddd;
+}
+
+.toolbox button span {
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.toolbox button.save-tool svg {
+    fill: #28a745;
+}
+
+/* Vertical slider and color palette styling */
+.vertical-slider,
+.vertical-color-palette {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vertical-slider {
+    right: 80px;
+    transform: rotate(270deg);
+}
+
+.vertical-color-palette {
+    right: 140px;
+}
+
+.color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
+
+.annotation-back-button {
+    display: inline-block;
+    position: absolute; /* Position the button relative to its nearest positioned ancestor */
+    top: 20px; /* Adjust the distance from the top */
+    left: 80px; 
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .annotation-back-button:hover {
+    background-color: #0c5900;
+  }

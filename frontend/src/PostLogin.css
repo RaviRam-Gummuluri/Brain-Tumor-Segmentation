@@ -1,0 +1,140 @@
+/* Wrapper for the entire content */
+.post-login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9; /* Lighter background for a cleaner feel */
+  font-family: 'Roboto', sans-serif;
+  min-height: 133vh; /* Ensure full screen height */
+  padding: 0 20px;
+}
+
+/* Main Content Styling */
+.main-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1500px;
+  padding: 40px;
+  color: #333;
+  width: 100%;
+  transition: transform 0.3s ease; /* Subtle animation on hover */
+}
+
+/* Hover effect for the main content box */
+.main-content:hover {
+  transform: translateY(-5px);
+}
+
+.main-content h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Text inside introduction paragraph */
+.app-introduction p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Heading for "How It Works" section */
+h2 {
+  font-size: 24px;
+  color: #2980b9;
+  margin-top: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Usage steps */
+.usage-steps {
+  margin-top: 15px;
+  padding-left: 30px;
+  list-style-type: disc;
+}
+
+.usage-steps li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.usage-steps li strong {
+  color: #2980b9;
+  font-weight: 500;
+}
+
+/* Interactive Demo Section */
+.demo-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.video-container {
+  margin-top: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 50%; /* Increased width for better video experience */
+  height: 400px;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+/* Subtle hover effect for video */
+.video-container iframe:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .main-content h1 {
+    font-size: 28px;
+  }
+
+  .usage-steps {
+    padding-left: 20px;
+  }
+
+  .usage-steps li {
+    font-size: 16px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+  }
+}
+
+/* Small devices / tablets */
+@media (max-width: 480px) {
+  .main-content h1 {
+    font-size: 24px;
+  }
+
+  .app-introduction p {
+    font-size: 16px;
+  }
+
+  .usage-steps li {
+    font-size: 14px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+  }
+}

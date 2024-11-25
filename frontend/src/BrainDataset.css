@@ -1,0 +1,79 @@
+.brain-dataset-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #0c5900;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.datasets-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns per row */
+  gap: 20px;
+  padding: 0 10px;
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 50px;
+}
+
+.dataset-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.dataset-card:hover {
+  transform: translateY(-5px);
+}
+
+.dataset-card-image {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.dataset-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.dataset-card p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.dataset-card a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dataset-card a:hover {
+  text-decoration: underline;
+}
+
