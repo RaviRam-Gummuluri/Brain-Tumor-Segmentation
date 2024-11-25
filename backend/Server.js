@@ -15,10 +15,10 @@ app.use(bodyParser.json()); // Middleware to parse JSON
 
 // MySQL connection setup
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root', // Change to your MySQL username
-    password: 'Ashu', // Change to your MySQL password
-    database: 'brain', // Change to your database name
+    host: 'https://brain-brain-tumor.b.aivencloud.com',
+    user: 'avnadmin', // Change to your MySQL username
+    password: 'AVNS_d-Uep5MM87Bp8o8xq09', // Change to your MySQL password
+    database: 'defaultdb', // Change to your database name
 });
 
 db.connect((err) => {
