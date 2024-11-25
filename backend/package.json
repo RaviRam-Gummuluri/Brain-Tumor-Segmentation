@@ -7,6 +7,6 @@
     "mysql2": "^3.11.4"
   },
   "scripts": {
-    "start": "node server.js"  // or "node app.js" depending on your entry file
+    "start": "node server.js"  
   }
 }
