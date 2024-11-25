@@ -13,12 +13,16 @@ app.use(cors());
 
 app.use(bodyParser.json()); // Middleware to parse JSON
 
-// MySQL connection setup
+// MySQL connection setup (updated for deployed credentials)
 const db = mysql.createConnection({
-    host: 'https://brain-brain-tumor.b.aivencloud.com',
-    user: 'avnadmin', // Change to your MySQL username
-    password: 'AVNS_d-Uep5MM87Bp8o8xq09', // Change to your MySQL password
-    database: 'defaultdb', // Change to your database name
+    host: 'brain-brain-tumor.b.aivencloud.com',
+    user: 'avnadmin',
+    password: 'AVNS_d-Uep5MM87Bp8o8xq09',
+    database: 'defaultdb',
+    port: 14550, // Specify the correct port
+    ssl: {
+        rejectUnauthorized: false, // Use this if the SSL certificate is not explicitly trusted
+    },
 });
 
 db.connect((err) => {
@@ -28,7 +32,6 @@ db.connect((err) => {
     }
     console.log('Connected to MySQL');
 });
-
 
 // Login route
 app.post('/login', (req, res) => {
@@ -68,8 +71,6 @@ app.post('/login', (req, res) => {
         res.status(200).json({ message: 'Login successful', user: result[0] });
     });
 });
-
-
 
 // Signup route
 app.post('/signup', async (req, res) => {
@@ -139,7 +140,6 @@ app.post('/create_project_folder', (req, res) => {
         return res.status(200).json({ message: 'Project folder already exists' });
     }
 });
-
 
 // Start server
 app.listen(port, () => {
