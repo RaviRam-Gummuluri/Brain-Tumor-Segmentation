@@ -34,7 +34,7 @@ function ImageDisplay({ projectName }) {
 
     try {
       // Send file to backend using fetch
-      const response = await fetch('http://localhost:5001/upload_dicom', {
+      const response = await fetch('https://brain-tumor-segmentation-cfzs.onrender.com/upload_dicom', {
         method: 'POST',
         body: formData,
       });
